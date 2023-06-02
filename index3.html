@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Галерея Картинок</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    
+    <section class="header_wrap">
+        <header class="header">
+            
+          <nav>
+              <ul class="menu">
+                <li><a href="index.html">На головну</a></li>
+                <li><a href="index4.html">Контакти</a></li>
+                <li><a href="index3.html">Галерея картинок</a></li>
+              </ul>
+          </nav>
+        <img src="logo.png" class="logo" usemap="#map1">
+        </header>
+    </section>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background: url(fon.jpg) center center no-repeat;
+            background-size: cover;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .hh1 {
+            color: #fffefe;
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        .gallery-item:hover .image-overlay {
+            opacity: 1;
+        }
+
+        .text {
+            font-family: cursive;
+            color: OldLace;
+        }
+
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .image-overlay-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .image-overlay-content h2 {
+            color: #fff;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .image-overlay-content p {
+            color: #ccc;
+            font-size: 14px;
+        }
+    </style>
+    <div class="container">
+        
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="a1.jpg" alt="Зображення 1">
+                <div class="image-overlay">
+                    <div class="image-overlay-content">
+                        <h2>Студентські конференції та семінари</h2>
+                        <p>Семінар — форма групових занять з предмета або теми студентів вищих навчальних закладів,
+                            учнів школи тощо, що відбувається під керівництвом викладача.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="a2.jpg" alt="Зображення 2">
+                <div class="image-overlay">
+                    <div class="image-overlay-content">
+                        <h2>Kультурні заходи в університеті</h2>
+                        <p>Університети часто організовують культурні фестивалі, концерти, театральні вистави та інші
+                            події, де студенти можуть показати свої таланти та насолодитися мистецтвом.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="a3.jpeg" alt="Зображення 3">
+                <div class="image-overlay">
+                    <div class="image-overlay-content">
+                        <h2>Спортивні змагання</h2>
+                        <p>Спортивні змагання – це своєрідна модель людських взаємовідносин, які реально існують у
+                            світі: боротьби, перемог і поразок, спрямованості до постійного вдосконалення.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="a4.jpg" alt="Зображення 4">
+                <div class="image-overlay">
+                    <div class="image-overlay-content">
+                        <h2>Волонтерство та соціальні проекти</h2>
+                        <p>Що спонукає людей працювати у сфері волонтерства?
+                            Волонтерство пропонує вам можливість спробувати нову кар'єру, не приймаючи довгострокових
+                            зобов'язань.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="a5.jpg" alt="Зображення 5">
+                <div class="image-overlay">
+                    <div class="image-overlay-content">
+                        <h2>Академічні змагання</h2>
+                        <p>Університети можуть організовувати наукові або академічні змагання, де студенти можуть
+                            продемонструвати свої знання та навички в певних галузях</p>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="a6.jpg" alt="Зображення 6">
+                <div class="image-overlay">
+                    <div class="image-overlay-content">
+                        <h2>Кар'єрні ярмарки та презентації</h2>
+                        <p>Багато університетів та коледжів організовують кар'єрні ярмарки, де студенти мають можливість
+                            зустрітися з представниками різних компаній та організацій.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="text"><b>Студентські конференції та семінари:</b>
+                <p class="text">Семінар — форма групових занять з предмета або теми студентів вищих навчальних закладів,
+                    учнів школи тощо, що відбувається під керівництвом викладача.</p>
+                </p>
+
+            </div>
+            <div>
+                <p class="text"><b>Kультурні заходи в університеті:</b>
+                <p class="text">Університети часто організовують культурні фестивалі, концерти, театральні вистави та
+                    інші події, де студенти можуть показати свої таланти та насолодитися мистецтвом.</p>
+            </div>
+            <div>
+                <p class="text"><b>Спортивні змагання:</b></p>
+                <p class="text">Спортивні змагання – це своєрідна модель людських взаємовідносин, які реально існують у
+                    світі: боротьби, перемог і поразок, спрямованості до постійного вдосконалення.</p>
+            </div>
+            <div>
+                <p class="text"><b>Волонтерство та соціальні проекти:</b></p>
+                <p class="text">Що спонукає людей працювати у сфері волонтерства?
+                    Волонтерство пропонує вам можливість спробувати нову кар'єру, не приймаючи довгострокових
+                    зобов'язань.</p>
+            </div>
+            <div>
+                <p class="text"><b>Академічні змагання:</b></p>
+                <p class="text">Університети можуть організовувати наукові або академічні змагання, де студенти можуть
+                    продемонструвати свої знання та навички в певних галузях</p>
+            </div>
+            <div>
+                <p class="text"><b>Кар'єрні ярмарки та презентації:</b></p>
+                <p class="text">Багато університетів та коледжів організовують кар'єрні ярмарки, де студенти мають
+                    можливість зустрітися з представниками різних компаній та організацій.</p>
+            </div>
+</body>
+
+</html>
